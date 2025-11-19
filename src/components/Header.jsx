@@ -17,8 +17,8 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full sticky top-0 bg-background z-50">
-      <div className="flex justify-between items-center p-3 border mx-12 max-w-6xl xl:mx-auto mt-4 rounded-2xl font-orbitron">
+    <div className="w-full sticky top-4 bg-transparent z-50 px-4">
+      <div className="flex justify-between items-center p-3 border bg-background/95 backdrop-blur-sm mx-auto max-w-6xl mt-4 rounded-2xl font-orbitron shadow-sm">
         <div>
           <Link href="/" className="font-bold text-lg">
             Skandan
@@ -33,7 +33,7 @@ const Header = () => {
                   <Link
                     key={link.name}
                     href={link.path}
-                    className="hover:text-primary transition-colors"
+                    className="hover:text-purple-600 transition-colors"
                   >
                     {link.name}
                   </Link>
