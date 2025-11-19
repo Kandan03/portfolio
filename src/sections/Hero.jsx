@@ -35,7 +35,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-6xl md:text-3xl lg:text-5xl xl:text-6xl md:px-5 font-bold leading-tight"
+          className="text-4xl mt-20 md:mt-0 md:text-3xl lg:text-5xl xl:text-6xl md:px-5 font-bold leading-tight"
         >
           Hello! I&apos;m{" "}
           <span className="font-orbitron bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -47,7 +47,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-xl md:text-xl md:px-5 font-semibold text-gray-700 dark:text-gray-200"
+          className="text-xl md:text-lg lg:text-2xl md:px-5 font-semibold text-gray-700 dark:text-gray-200"
         >
           Full Stack Developer & Creative Problem Solver
         </motion.h2>
@@ -56,7 +56,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-base md:text-lg md:px-5 text-gray-600 dark:text-gray-300 max-w-xl mx-auto"
+          className="text-base md:text-sm xl:text-lg md:px-5 text-gray-600 dark:text-gray-300 max-w-xl mx-auto"
         >
           Passionate about building innovative web solutions. Let&apos;s create
           something amazing together!
