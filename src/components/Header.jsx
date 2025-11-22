@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
@@ -17,8 +19,8 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full sticky top-4 bg-transparent z-50 px-4">
-      <div className="flex justify-between items-center p-3 border bg-background/95 backdrop-blur-sm mx-auto max-w-6xl mt-4 rounded-2xl font-orbitron shadow-sm">
+    <div className="w-full fixed top-4 bg-transparent z-50 px-14">
+      <div className="flex justify-between items-center p-3 border bg-background/95 backdrop-blur-sm mx-auto max-w-4xl rounded-2xl font-orbitron shadow-sm">
         <div>
           <Link href="/" className="font-bold text-lg">
             Skandan
@@ -34,6 +36,7 @@ const Header = () => {
                     key={link.name}
                     href={link.path}
                     className="hover:text-purple-600 transition-colors"
+                    aria-label={`Navigate to ${link.name} section`}
                   >
                     {link.name}
                   </Link>
@@ -44,7 +47,7 @@ const Header = () => {
         </div>
         <div className="hidden md:block">
           <Button>
-            <Link href="#contact">Get Started</Link>
+            <Link href="#contact" aria-label="Navigate to Contact section">Get Started</Link>
           </Button>
         </div>
 
@@ -64,7 +67,8 @@ const Header = () => {
                   <Link
                     href={link.path}
                     onClick={toggleMenu}
-                    className="block py-2 hover:text-primary transition-colors"
+                    className="block py-2 hover:text-primary transition-colors text-center"
+                    aria-label={`Navigate to ${link.name} section`}
                   >
                     {link.name}
                   </Link>
@@ -72,7 +76,7 @@ const Header = () => {
               ))}
               <li className="mt-2">
                 <Button className="w-full" onClick={toggleMenu}>
-                  <Link href="#contact">Get Started</Link>
+                  <Link href="#contact" aria-label="Navigate to Contact section">Get Started</Link>
                 </Button>
               </li>
             </ul>
