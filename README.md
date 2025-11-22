@@ -106,9 +106,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - your.email@example.com
+Your Name - [@Kandan0303](https://x.com/Kandan0303) - skandan.0303@gmail.com
 
-Project Link: [https://github.com/yourusername/portfolio](https://github.com/yourusername/portfolio)
+Project Link: [https://github.com/Kandan03/Portfolio](https://github.com/Kandan03/Portfolio)
 
 ---
 
